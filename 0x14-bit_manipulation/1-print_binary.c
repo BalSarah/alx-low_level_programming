@@ -7,20 +7,20 @@
 
 void print_binary(unsigned long int n)
 {
-        int Danica, Lil_david = 0;
-        unsigned long int now;
+	int Danica, Lil_david = 0;
+	unsigned long int now;
 
-        for (Danica = 63; Danica >= 0; Danica--)
-        {
-                now = n >> Danica;
-                if (now & 1)
-                {
-                        _putchar('1');
-                        Lil_david++;
-                }
-                else if (now)
-                        _putchar('0');
-        }
-        if (!now)
-                _putchar('0');
+	for (Danica = 63; Danica >= 0; Danica--)
+	{
+		now = n >> Danica;
+		if (now & 1)
+		{
+			_putchar('1');
+			Lil_david++;
+		}
+		else if (now)
+			_putchar('0');
+	}
+	if (!now)
+		_putchar('0');
 }
